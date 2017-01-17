@@ -1,0 +1,18 @@
+{application, dht,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { dht_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    lager,
+    epigpio
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, []},
+  {links, []}
+ ]}.

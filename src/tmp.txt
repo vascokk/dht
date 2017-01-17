@@ -1,0 +1,37 @@
+21:34:59.396 [debug] ----> get_epigpio_proc State: #{epigpio_sup => <0.159.0>}, Sup: <0.159.0>
+21:34:59.423 [debug] Supervisor inet_gethost_native_sup started undefined at pid <0.162.0>
+21:34:59.423 [debug] Supervisor kernel_safe_sup started inet_gethost_native:start_link() at pid <0.161.0>
+21:34:59.884 [debug] --------> 2 <-----------
+21:34:59.885 [debug] Supervisor dht_sup started dht:start_link(dht21, 4, <0.117.0>) at pid <0.156.0>
+21:34:59.900 [debug] Received tcp response: <<0,0,0,0,4,0,0,0,1,0,0,0,0,0,0,0>>
+21:34:59.900 [debug] Sending response {epigpio,{setmode,4,1,0}} to client: <0.156.0>
+21:34:59.900 [debug] Received unhandled eventType: info, Event: {epigpio,{setmode,4,1,0}}, in StateName: idle, current State: {state,dht21,4,<0.160.0>,undefined,<<>>,<0.117.0>}
+21:34:59.900 [debug] Received notification CMD response: <<99,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0>>
+21:34:59.900 [debug] Sending response {epigpio,{notify_open,0,0,0}} to client: <0.156.0>
+21:34:59.901 [debug] Received unhandled eventType: info, Event: {epigpio,{notify_open,0,0,0}}, in StateName: idle, current State: {state,dht21,4,<0.160.0>,undefined,<<>>,<0.117.0>}
+21:34:59.910 [debug] Received tcp response: <<2,0,0,0,4,0,0,0,2,0,0,0,0,0,0,0>>
+21:34:59.910 [debug] Sending response {epigpio,{setpullupdown,4,2,0}} to client: <0.156.0>
+21:34:59.910 [debug] Received unhandled eventType: info, Event: {epigpio,{setpullupdown,4,2,0}}, in StateName: idle, current State: {state,dht21,4,<0.160.0>,undefined,<<>>,<0.117.0>}
+21:35:00.886 [debug] GenStatem eventType: cast, Event: start, in StateName: idle, current State: {state,dht21,4,<0.160.0>,undefined,<<>>,<0.117.0>}
+21:35:01.017 [debug] Received tcp response: <<0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0>>
+21:35:01.018 [debug] Sending response {epigpio,{setmode,4,0,0}} to client: <0.156.0>
+21:35:01.018 [debug] Received unhandled eventType: info, Event: {epigpio,{setmode,4,0,0}}, in StateName: wait_start_response_low, current State: {state,dht21,4,<0.160.0>,0,<<>>,<0.117.0>}
+21:35:01.018 [debug] Received notification CMD response: <<19,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0>>
+21:35:01.018 [debug] Sending response {epigpio,{notify_begin,0,16,0}} to client: <0.156.0>
+21:35:01.018 [debug] Received unhandled eventType: info, Event: {epigpio,{notify_begin,0,16,0}}, in StateName: wait_start_response_low, current State: {state,dht21,4,<0.160.0>,0,<<>>,<0.117.0>}
+21:35:01.033 [debug] Received tcp response: <<4,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0>>
+21:35:01.033 [debug] Sending response {epigpio,{write,4,0,0}} to client: <0.156.0>
+21:35:01.033 [debug] Received unhandled eventType: info, Event: {epigpio,{write,4,0,0}}, in StateName: wait_start_response_low, current State: {state,dht21,4,<0.160.0>,0,<<>>,<0.117.0>}
+21:35:01.033 [debug] Received notification: <<0,0,0,0,168,188,52,3,239,233,0,32>>
+21:35:01.033 [debug] Sending response {epigpio,{notification,0,0,53787816,536930799}} to client: <0.156.0>
+21:35:01.034 [debug] Received eventType: info, Event: {epigpio,{notification,0,0,53787816,536930799}}, in StateName: wait_start_response_low, current State: {state,dht21,4,<0.160.0>,0,<<>>,<0.117.0>}
+21:35:01.049 [debug] Received tcp response: <<47,0,0,0,15,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,1,0,0,0,0,0,0,0,46,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0>>
+21:35:01.049 [debug] Sending response {epigpio,{mils,15,0,0}} to client: <0.156.0>
+21:35:01.050 [debug] Sending response {epigpio,{write,4,1,0}} to client: <0.156.0>
+21:35:01.050 [debug] Received unhandled eventType: info, Event: {epigpio,{mils,15,0,0}}, in StateName: wait_start_response_high, current State: {state,dht21,4,<0.160.0>,53787816,<<>>,<0.117.0>}
+21:35:01.050 [debug] Sending response {epigpio,{mics,50,0,0}} to client: <0.156.0>
+21:35:01.050 [debug] Received notification: <<1,0,0,0,209,247,52,3,255,201,0,32>>
+21:35:01.050 [debug] Sending response {epigpio,{notification,1,0,53802961,536922623}} to client: <0.156.0>
+21:35:01.050 [debug] Received unhandled eventType: info, Event: {epigpio,{write,4,1,0}}, in StateName: wait_start_response_high, current State: {state,dht21,4,<0.160.0>,53787816,<<>>,<0.117.0>}
+21:35:01.050 [debug] Received unhandled eventType: info, Event: {epigpio,{mics,50,0,0}}, in StateName: wait_start_response_high, current State: {state,dht21,4,<0.160.0>,53787816,<<>>,<0.117.0>}
+21:35:01.050 [debug] Received eventType: info, Event: {epigpio,{notification,1,0,53802961,536922623}}, in StateName: wait_start_response_high, current State: {state,dht21,4,<0.160.0>,53787816,<<>>,<0.117.0>}
